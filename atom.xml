@@ -6,7 +6,7 @@
   <link href="https://blog.awa.moe/atom.xml" rel="self"/>
   
   <link href="https://blog.awa.moe/"/>
-  <updated>2024-03-21T16:29:33.051Z</updated>
+  <updated>2024-03-21T16:32:09.897Z</updated>
   <id>https://blog.awa.moe/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://blog.awa.moe/2024/03/21/kmod-signing/"/>
     <id>https://blog.awa.moe/2024/03/21/kmod-signing/</id>
     <published>2024-03-21T03:53:50.000Z</published>
-    <updated>2024-03-21T16:29:33.051Z</updated>
+    <updated>2024-03-21T16:32:09.897Z</updated>
     
     <content type="html"><![CDATA[<p>印象中似乎很久沒有寫 blog 了。<br>生活中積累了都是一些比較零碎的東西，沒有什麼特別值得寫的。</p><p>半年前買了一台 surface pro 9 之後，直接 ntr 裝了 debian。<br>雖然半年使用體驗下來，個人覺得一致性體驗會比正統 windows 差點，但我仍然通過很多小技巧讓 linux 成爲了我的主力。 <del>我就不買macbook 我就不買 就不買 氣死你們</del></p><p>這篇 blog 大概用作備忘，每次滾內核都要手動簽一下，挺煩的<br>就幾個命令的事情，所以還不想去手動去配 dkms，懶了懶了</p><span id="more"></span><h2 id="關於安全啓動"><a href="#關於安全啓動" class="headerlink" title="關於安全啓動"></a>關於安全啓動</h2><p>安全啓動固然好，但是有些時候又想偷懶。畢竟我都有 root 了我還有什麼不能幹的x<br>主要問題是，在啓動 kernel 之後，內核似乎會同時啓用 kmod 的簽名檢查，讓一些原本沒有簽名的模塊無法正常加載。<br>比如設備驅動、虛擬機內核模塊 等(真的是很浪費時間耶</p><p>至於如何在 surface 啓用安全啓動，這邊就不再贅述了，如果你同樣有 surface 運行 linux 的需求，你可以跟隨 GitHub 上的 linux-surface 項目的 wiki 進行配置。</p><p>(大抵還是 mok 那一套</p><h2 id="簽名流程"><a href="#簽名流程" class="headerlink" title="簽名流程"></a>簽名流程</h2><p>因爲我這邊需要簽名的東西是 vmware 的 vmmon 和 vmnet，所以我就以這兩個模塊爲例。<br>你問我都 linux 了爲什麼不用 kvm? 大概還是因爲習慣了 vmware，畢竟還需要管理一些 esxi 實例。二者都可以，只是對我來說 vmware 方便而已了。</p><p>簽名流程非常簡單。首先，你需要一個私鑰和一個公鑰。然後，你需要將公鑰加入到你的 MOK 中，這樣你的內核就會信任你的模塊了。<br>那麼上命令吧。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ sudo /usr/src/linux-headers-$(<span class="built_in">uname</span> -r)/scripts/sign-file \</span><br><span class="line">  sha256       \</span><br><span class="line">  &lt;mok priv&gt;   \</span><br><span class="line">  &lt;mok public&gt; \</span><br><span class="line">  $(modinfo -n &lt;mod&gt;)</span><br></pre></td></tr></table></figure><p>其中，<code>&lt;mok priv&gt;</code> 是你的私鑰，<code>&lt;mok public&gt;</code> 是你的公鑰，<code>&lt;mod&gt;</code> 是你要簽名的模塊，如果你有正常跟隨 surface-linux 的 wiki 配置安全啓動的話，你應該會有一個密鑰對，直接用它們就行。</p><p>這樣，模塊就被簽名好了。直接用 modprobe 或者 insmod 加載上去就行。<br>或者更簡單一些，reboot。</p><p>這個方法同樣適用於 virtualbox，簽完加載即可。<br>順便說一句 virtualbox 的3D圖形加速有大約 300MB&#x2F;s 內存泄漏，開機直接被 oom kill。xs</p><h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><ul><li>[1] I can’t execute command modprobe vboxdrv<br><a href="https://stackoverflow.com/questions/38437264/i-cant-execute-command-modprobe-vboxdrv">https://stackoverflow.com/questions/38437264/i-cant-execute-command-modprobe-vboxdrv</a></li><li>[2] linux-surface&#x2F;wiki&#x2F;Secure-Boot<br><a href="https://github.com/linux-surface/linux-surface/wiki/Secure-Boot">https://github.com/linux-surface/linux-surface/wiki/Secure-Boot</a></li></ul>]]></content>
     
