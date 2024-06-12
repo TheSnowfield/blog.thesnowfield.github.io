@@ -6,7 +6,7 @@
   <link href="https://blog.awa.moe/atom.xml" rel="self"/>
   
   <link href="https://blog.awa.moe/"/>
-  <updated>2024-06-12T15:44:20.786Z</updated>
+  <updated>2024-06-12T15:47:30.806Z</updated>
   <id>https://blog.awa.moe/</id>
   
   <author>
@@ -21,12 +21,12 @@
     <link href="https://blog.awa.moe/2024/06/12/fix-thermometer/"/>
     <id>https://blog.awa.moe/2024/06/12/fix-thermometer/</id>
     <published>2024-06-12T15:20:06.000Z</published>
-    <updated>2024-06-12T15:44:20.786Z</updated>
+    <updated>2024-06-12T15:47:30.806Z</updated>
     
-    <content type="html"><![CDATA[<p>我在發燒的時候往往會顧前不顧後，非常容易摔東西。<br>這應該算是我摔壞的第三個溫度計了。前兩次壞的都是水印式的，不過沒想到的是，這次把一個電子溫度計給鯊了。</p><span id="more"></span><p>心中大罵<del>f**k</del>，溫度計自從摔地上之後就顯示 L。有可能是<code>Low Battery</code>，也有可能是<code>Low Temperature</code>… 但是量了電池電壓，是 1.5v，那就排除了電池問題。</p><p>於是拆開一看，傻眼了()<br><img src="/../static/fix-thermometer/Snipaste_2024-06-12_23-43-43.jpg" alt="img"></p><p>原來是熱電偶的線給我摔炸了啊xxx<br>那還不修起來，飛線飛線。 此時我還在發高燒 39 度，但爲了能量體溫，那也沒辦法了。</p><h2 id="進行飛線修復"><a href="#進行飛線修復" class="headerlink" title="進行飛線修復"></a>進行飛線修復</h2><p>先把線飛出來，然後用三秒油固化防止短路。<br><img src="/../static/fix-thermometer/Snipaste_2024-06-12_23-33-41.jpg" alt="img"></p><p>然後焊接到斷掉線的焊盤上，這個步驟比較困難，因爲線很細，而且溫度計的 PCB 也很小。<br><img src="/../static/fix-thermometer/Snipaste_2024-06-12_23-32-24.jpg" alt="img"></p><h2 id="修好了-繼續躺"><a href="#修好了-繼續躺" class="headerlink" title="修好了 繼續躺"></a>修好了 繼續躺</h2><p><img src="/../static/fix-thermometer/Snipaste_2024-06-12_23-38-07.jpg" alt="img"><br>(又省錢了 (不是<br>其實在意識到溫度計可能壞了之後，馬上就買了新的，但是新的還沒到… 當時氣得想去小料庫找 NTC 用 Arduino 自己先搓一個。</p><p>算了，總之繼續躺了。</p>]]></content>
+    <content type="html"><![CDATA[<p>我在發燒的時候往往會顧前不顧後，非常容易摔東西。<br>這應該算是我摔壞的第三個溫度計了。前兩次壞的都是水銀式的，不過沒想到的是，這次把一個電子溫度計給鯊了。</p><span id="more"></span><p>心中大罵<del>f**k</del>，溫度計自從摔地上之後就顯示 L。有可能是<code>Low Battery</code>，也有可能是<code>Low Temperature</code>… 但是量了電池電壓，是 1.5v，那就排除了電池問題。</p><p>於是拆開一看，傻眼了()<br><img src="/../static/fix-thermometer/Snipaste_2024-06-12_23-43-43.jpg" alt="img"></p><p>原來是熱電偶的線給我摔炸了啊xxx<br>那還不修起來，飛線飛線。 此時我還在發高燒 39 度，但爲了能量體溫，那也沒辦法了。</p><h2 id="進行飛線修復"><a href="#進行飛線修復" class="headerlink" title="進行飛線修復"></a>進行飛線修復</h2><p>先把線飛出來，然後用三秒油固化防止短路。<br><img src="/../static/fix-thermometer/Snipaste_2024-06-12_23-33-41.jpg" alt="img"></p><p>然後焊接到斷掉線的焊盤上，這個步驟比較困難，因爲線很細，而且溫度計的 PCB 也很小。<br><img src="/../static/fix-thermometer/Snipaste_2024-06-12_23-32-24.jpg" alt="img"></p><h2 id="修好了-繼續躺"><a href="#修好了-繼續躺" class="headerlink" title="修好了 繼續躺"></a>修好了 繼續躺</h2><p><img src="/../static/fix-thermometer/Snipaste_2024-06-12_23-38-07.jpg" alt="img"><br>(又省錢了 (不是<br>其實在意識到溫度計可能壞了之後，馬上就買了新的，但是新的還沒到… 當時氣得想去小料庫找 NTC 用 Arduino 自己先搓一個。</p><p>算了，總之繼續躺了。</p>]]></content>
     
     
-    <summary type="html">&lt;p&gt;我在發燒的時候往往會顧前不顧後，非常容易摔東西。&lt;br&gt;這應該算是我摔壞的第三個溫度計了。前兩次壞的都是水印式的，不過沒想到的是，這次把一個電子溫度計給鯊了。&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;我在發燒的時候往往會顧前不顧後，非常容易摔東西。&lt;br&gt;這應該算是我摔壞的第三個溫度計了。前兩次壞的都是水銀式的，不過沒想到的是，這次把一個電子溫度計給鯊了。&lt;/p&gt;</summary>
     
     
     
