@@ -1,0 +1,816 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>從零購置一台 Voron 打印機 (一) 采購 - Atmosphere</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="TheSnowfield"><meta name="msapplication-TileImage" content="https://avatars.githubusercontent.com/u/17957399"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="TheSnowfield"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="最近打算組裝一台可靠的 3D 打印機, 收到朋友安利 Voron, 看了看挺好而且還是開源項目, 所以就沒多想, 跟隨官網向導拉清單開始采購"><meta property="og:type" content="blog"><meta property="og:title" content="從零購置一台 Voron 打印機 (一) 采購"><meta property="og:url" content="https://blog.awa.moe/2022/08/23/voron/voron-2-4-bom/"><meta property="og:site_name" content="Atmosphere"><meta property="og:description" content="最近打算組裝一台可靠的 3D 打印機, 收到朋友安利 Voron, 看了看挺好而且還是開源項目, 所以就沒多想, 跟隨官網向導拉清單開始采購"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://blog.awa.moe/img/og_image.png"><meta property="article:published_time" content="2022-08-23T14:32:55.000Z"><meta property="article:modified_time" content="2024-03-17T08:02:39.843Z"><meta property="article:author" content="TheSnowfield"><meta property="article:tag" content="Voron"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://blog.awa.moe/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.awa.moe/2022/08/23/voron/voron-2-4-bom/"},"headline":"從零購置一台 Voron 打印機 (一) 采購","image":["https://blog.awa.moe/img/og_image.png"],"datePublished":"2022-08-23T14:32:55.000Z","dateModified":"2024-03-17T08:02:39.843Z","author":{"@type":"Person","name":"TheSnowfield"},"publisher":{"@type":"Organization","name":"Atmosphere","logo":{"@type":"ImageObject","url":{"text":"ATMOSPHERE"}}},"description":"最近打算組裝一台可靠的 3D 打印機, 收到朋友安利 Voron, 看了看挺好而且還是開源項目, 所以就沒多想, 跟隨官網向導拉清單開始采購"}</script><link rel="canonical" href="https://blog.awa.moe/2022/08/23/voron/voron-2-4-bom/"><link rel="icon" href="https://avatars.githubusercontent.com/u/17957399"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><style id="theme-switcher"></style><script src="/js/theme-switcher.js"></script><script id="shake-it" src="/js/shake-it.js" audio="/static/plugin-shake-it/rickroll/audio.mp3" lyric="/static/plugin-shake-it/rickroll/audio.lrc"></script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Atmosphere" type="application/atom+xml">
+</head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">ATMOSPHERE</a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/about">About</a><a class="navbar-item" href="/links">Links</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Dark Mode" href="/"><i class="fa-solid fa-moon"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2022-08-23T14:32:55.000Z" title="8/23/2022, 10:32:55 PM">2022-08-23</time></span><span class="level-item"><a class="link-muted" href="/categories/Voron/">Voron</a></span></div></div><h1 class="title is-3 is-size-4-mobile">從零購置一台 Voron 打印機 (一) 采購</h1><div class="content"><p>最近打算組裝一台可靠的 3D 打印機, 收到朋友安利 Voron, 看了看挺好<br>而且還是開源項目, 所以就沒多想, 跟隨官網向導拉清單開始采購</p>
+<span id="more"></span>
+
+<h3 id="BOM-生成向導"><a href="#BOM-生成向導" class="headerlink" title="BOM 生成向導"></a>BOM 生成向導</h3><p>連接在這 -&gt; <a target="_blank" rel="noopener" href="https://vorondesign.com/voron2.4">Voron Design</a><br>然後點擊首頁左邊的 <code>Configurator</code> 打開生成向導<br>依次選擇</p>
+<ul>
+<li>Direct Feed (近程擠出機)</li>
+<li>New build. Give me the full BOM. (創建新的實例)</li>
+<li>Blind Joints (框架接頭)</li>
+<li>IGUS cable chains (使用坦克鏈)</li>
+<li>350mm Spec (構建大小, 這個自由發揮, 我選擇 350mm*350mm)</li>
+</ul>
+<p>然後就會出來一個材料 BOM 單, 下載表格文件然後我們開始 (｡･∀･)ﾉﾞ</p>
+<h3 id="完整清單"><a href="#完整清單" class="headerlink" title="完整清單"></a>完整清單</h3><p>請按清單(根據上邊的步驟生成好的清單), 依次購買齊所有配件<br>最右側的 CheckBox 可以幫助你記錄已經完成采購的項目 (打算使用 cookie 永久保存你的清單記錄, 不過現在還沒寫)</p>
+<p>此清單大部分翻譯及踩坑由 47姐 提供, 感謝! (*≧︶≦))</p>
+<table>
+<thead>
+<tr>
+<th align="left">型號</th>
+<th align="left">數量</th>
+<th align="left">備注</th>
+<th>檢查</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">M5x40 SHCS</td>
+<td align="left">22</td>
+<td align="left">SHCS 圓柱頭内六角螺絲</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">M5x30 BHCS</td>
+<td align="left">22</td>
+<td align="left">BHCS 圓頭(蘑菇) 内六角螺絲</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">M5x16 BHCS</td>
+<td align="left">35</td>
+<td align="left"></td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">M5x10 BHCS</td>
+<td align="left">35</td>
+<td align="left"></td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">M5 Hexnut</td>
+<td align="left">16</td>
+<td align="left">Hexnut 六角螺母</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">M5 Post-install T-nut</td>
+<td align="left">68</td>
+<td align="left">彈性螺母 注意所有此類螺母要歐標 2020</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">M5 1mm Shim</td>
+<td align="left">42</td>
+<td align="left">M5 1mm 墊片</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">M4x6 BHCS</td>
+<td align="left">7</td>
+<td align="left"></td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">M4 Knurled Nut (DIN 466-B)</td>
+<td align="left">4</td>
+<td align="left">滾花手擰螺母</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">M3x40 SHCS</td>
+<td align="left">30</td>
+<td align="left"></td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">M3x30 SHCS</td>
+<td align="left">25</td>
+<td align="left"></td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">M3x20 SHCS</td>
+<td align="left">22</td>
+<td align="left"></td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">M3x16 SHCS</td>
+<td align="left">20</td>
+<td align="left"></td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">M3x12 SHCS</td>
+<td align="left">41</td>
+<td align="left"></td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">M3x10 FHCS</td>
+<td align="left">4</td>
+<td align="left">FHCS 沉頭内六角</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">M3x6 FHCS</td>
+<td align="left">8</td>
+<td align="left"></td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">M3x8 SHCS</td>
+<td align="left">187</td>
+<td align="left"></td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">M3x6 BHCS</td>
+<td align="left">11</td>
+<td align="left"></td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">M3 Hexnut</td>
+<td align="left">6</td>
+<td align="left"></td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">M3 Post-install T-nut</td>
+<td align="left">103</td>
+<td align="left">彈性螺母 注意所有此類螺母要歐標 2020</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">M3 Hammer Head T-nuts</td>
+<td align="left">60</td>
+<td align="left">T 型螺母 注意所有此類螺母要歐標 2020</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">M3 Washer</td>
+<td align="left">3</td>
+<td align="left">墊片(washer 薄的墊片)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">M3 Threaded Insert (M3x5x4)</td>
+<td align="left">110</td>
+<td align="left">熱熔螺母 注意尺寸</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">M2x10 Self-tapping Screw</td>
+<td align="left">16</td>
+<td align="left">自攻螺絲</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">GT2 80T Pulley (5mm ID 6mm W)</td>
+<td align="left">4</td>
+<td align="left">GT2 傳動輪, T 為齒數</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">GT2 20T Pulley (5mm ID 6mm W)</td>
+<td align="left">3</td>
+<td align="left">Pulley 傳動輪</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">GT2 20T Pulley (5mm ID 9mm W)</td>
+<td align="left">4</td>
+<td align="left">Toothed Idler 惰輪</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">GT2 16T Pulley (5mm ID 6mm W)</td>
+<td align="left">4</td>
+<td align="left">ID 通孔孔徑</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">GT2 20T Toothed Idler (5mm ID 6mm W)</td>
+<td align="left">2</td>
+<td align="left">W 適配皮帶寬度</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">GT2 20T Toothed Idler (5mm ID 9mm W)</td>
+<td align="left">4</td>
+<td align="left">傳動輪有螺絲, 惰輪沒有 注意區分</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">F695 Bearing</td>
+<td align="left">20</td>
+<td align="left">軸承 注意嚴格對應名字買</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">625 Bearing</td>
+<td align="left">12</td>
+<td align="left">不可以多字母 也不可以少字母</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Ø5x60mm Shaft D Cut</td>
+<td align="left">4</td>
+<td align="left">不鏽鋼光杆</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Ø5x35mm Shaft (trim to size)</td>
+<td align="left">1</td>
+<td align="left">D Cut 是銑對應位置的 D 型槽 但是實測不用也行</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">GT2 Belt Loop (6mm W) - 188mm</td>
+<td align="left">4</td>
+<td align="left">GT2 閉口環形皮帶 長度 188mm 寬度6mm</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">GT2 Open Belt LL-2GT-9 (9mm wide) - 1200mm</td>
+<td align="left">4</td>
+<td align="left">GT2 開口皮帶 寬度 9mm</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">GT2 Open Belt LL-2GT-6 (6mm wide) - 2000mm</td>
+<td align="left">2</td>
+<td align="left">GT2 開口皮帶 寬度 6mm</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">BMG Extruder Components Kit</td>
+<td align="left">1</td>
+<td align="left">BMG原版擠出機套件</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Linear Rail MGN9H 400mm</td>
+<td align="left">6</td>
+<td align="left">綫性導軌</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Linear Rail MGN12H 400mm</td>
+<td align="left">1</td>
+<td align="left"></td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Omron D2F-01L Micro Switch</td>
+<td align="left">3</td>
+<td align="left">歐姆龍微動</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Inductive Probe (See sourcing guide)</td>
+<td align="left">1</td>
+<td align="left">接近開關</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Hotend Kit (24V)</td>
+<td align="left">1</td>
+<td align="left">熱源</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">40x40x20 Centrifugal Fan (24V)</td>
+<td align="left">1</td>
+<td align="left">渦輪風扇</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">40x40x10 Axial Fan (24V)</td>
+<td align="left">1</td>
+<td align="left">普通風扇</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Mini 12864 Display</td>
+<td align="left">1</td>
+<td align="left">128*64 小熒幕 (可選)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">TycoElectronics 10EGG1-1 Filtered Power Inlet (NA&#x2F;UK)</td>
+<td align="left">1</td>
+<td align="left">帶保險絲的 AC 座子, 可根據自己所在地區選購 120V 或 220V</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">TycoElectronics 10EGG1-2 Filtered Power Inlet (EU)</td>
+<td align="left">1</td>
+<td align="left">和上面是一樣的, 只需要買一個就行</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Medium Blow Fuse 5x20mm 4A (220V mains)</td>
+<td align="left">2</td>
+<td align="left">4A 保險絲, 如果你所在地區市電是 220V 就選它</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Medium Blow Fuse 5x20mm 8A (120v mains)</td>
+<td align="left">1</td>
+<td align="left">8A 保險絲, 如果你所在地區市電是 120V 就選它</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Keystone CAT6 Insert (Optional)</td>
+<td align="left">1</td>
+<td align="left">網綫口 (可選)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">60x60x20 Fan (24V)</td>
+<td align="left">3</td>
+<td align="left">大號風扇</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Controller with 7+ Stepper outputs</td>
+<td align="left">1</td>
+<td align="left">控制板, 可以用 MKS Monster 8 替代</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">TMC2209 Stepper Motor Driver</td>
+<td align="left">7</td>
+<td align="left">TMC 2209 電機驅動器模塊</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">USB Cable for selected controller</td>
+<td align="left">1</td>
+<td align="left">USB cable</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">RaspberryPi 3B+ or better</td>
+<td align="left">1</td>
+<td align="left">這個隨意, 如果自己有派或者電腦 (可選)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Mean Well LRS-200-24 PSU</td>
+<td align="left">1</td>
+<td align="left">200W 電源, 可選輸出12V 或者 24V (注意要跟上邊風扇匹配電壓)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Mean Well RS-25-5 PSU</td>
+<td align="left">1</td>
+<td align="left">給派的 5V 電源 (可選)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Omron G3A-210B-DC5 SSR</td>
+<td align="left">1</td>
+<td align="left">SSR 固態繼電器, C35 扣具兼容並且要大功率</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">DIN Rail Mount Bracket for G3A SSR</td>
+<td align="left">1</td>
+<td align="left">固態繼電器 C35 導軌固定件</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">BAT85 Diode</td>
+<td align="left">1</td>
+<td align="left">給接近開關用的二極管 (可選)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">C13 Power Cord</td>
+<td align="left">1</td>
+<td align="left">AC 電源綫 (可選)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Thermal Fuse (125C)</td>
+<td align="left">1</td>
+<td align="left">RH溫度保險絲 (<strong>安全設備, 重要</strong>)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">NEMA17 Motor 17HS19-2004S</td>
+<td align="left">6</td>
+<td align="left">42 步進電機, 最好選擇扭矩大角度小的 (比如0.9°)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">NEMA17 Motor 17HS08-1004S</td>
+<td align="left">1</td>
+<td align="left">超薄 42 步進電機, 厚度必須小於 2mm, 否則裝不上</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Rubber Foot (1.5x.75”, 38x19mm)</td>
+<td align="left">4</td>
+<td align="left">橡膠脚墊, 減震用</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">OpenBuilds Billet Angle Corner Connector (2020)</td>
+<td align="left">4</td>
+<td align="left">2020 V型材角碼</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Misumi HFSB5-2020-340</td>
+<td align="left">1</td>
+<td align="left">2020 V 型材 340mm</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Misumi HFSB5-2020-430</td>
+<td align="left">1</td>
+<td align="left">2020 V 型材 430mm</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Misumi HFSB5-2020-450</td>
+<td align="left">2</td>
+<td align="left">2020 V 型材 450mm</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Misumi HFSB5-2020-470-TPW</td>
+<td align="left">10</td>
+<td align="left">2020 V 型材 470mm (<strong>兩端 M5 攻絲</strong>)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Misumi HFSB5-2020-530-LCP-RCP</td>
+<td align="left">4</td>
+<td align="left">2020 V 型材 530mm (<strong>兩端側面開孔</strong>)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">DIN 3 Rails (35mm W) - 465mm</td>
+<td align="left">2</td>
+<td align="left">C35 導軌</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Fume Extractor Carbon Filter Element</td>
+<td align="left">1</td>
+<td align="left">活性炭過濾棉</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">4mm Threaded Bowden Coupler</td>
+<td align="left">1</td>
+<td align="left">4mm 氣動接頭 (遠程基礎機接頭)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">3M VHB Tape 5952</td>
+<td align="left">1</td>
+<td align="left">3M 膠帶</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Loctite Blue Threadlocker Stick</td>
+<td align="left">1</td>
+<td align="left">固體膠棒</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Mobil EP1&#x2F;2 Grease</td>
+<td align="left">1</td>
+<td align="left">綫性導軌潤滑油 (WD40也行)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Single Sided Foam Tape 1mm Thick (5m)</td>
+<td align="left">1</td>
+<td align="left">海綿膠帶</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Single Sided Foam Tape 3mm Thick (5m)</td>
+<td align="left">1</td>
+<td align="left">海綿膠帶</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Ø6x3mm Neodimium Magnet</td>
+<td align="left">8</td>
+<td align="left">6*3mm 圓柱小磁鐵</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">PTFE Tube (4mm OD 3mm ID) - 1000mm</td>
+<td align="left">1</td>
+<td align="left">鐵氟龍管</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">PTFE Tube (4mm OD 2mm ID) - 300mm</td>
+<td align="left">1</td>
+<td align="left">OD外徑 ID内徑</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Nylon Cable Ties, Small (.07-.10”, 1.8-2.7mm wide)</td>
+<td align="left">42</td>
+<td align="left">束綫帶</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">18AWG Wire (10ft&#x2F;3m total)</td>
+<td align="left">1</td>
+<td align="left">導綫 18AWG</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">20AWG High-flex Wire (10ft&#x2F;3m total)</td>
+<td align="left">1</td>
+<td align="left">導綫 20AWG</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">22-24AWG High-flex Wire (min 19 strand)(250ft&#x2F;76m total)</td>
+<td align="left">1</td>
+<td align="left">導綫 22-24AWG</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Female Spade Crimp Terminal (18-22AWG, .250”, 6.35mm)</td>
+<td align="left">7</td>
+<td align="left">各種杜邦綫座子之類 (可選)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Fork Spade Crimp Terminal (18-22AWG, #10)</td>
+<td align="left">5</td>
+<td align="left">各種杜邦綫座子之類 (可選)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Ring Crimp Terminal (16-22AWG, #6)</td>
+<td align="left">1</td>
+<td align="left">各種杜邦綫座子之類 (可選)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">JST XH Connector, 3 Position Male&#x2F;Female Pair plus Pins</td>
+<td align="left">1</td>
+<td align="left">各種杜邦綫座子之類 (可選)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Connector kit matching your controller choice (usually JST-XH)</td>
+<td align="left">1</td>
+<td align="left">各種杜邦綫座子之類 (可選)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Crimp Ferrule Kit (covering sizes 24AWG to 18AWG)</td>
+<td align="left">1</td>
+<td align="left">各種杜邦綫座子之類 (可選)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">MicroFit3 Connector Plug 4 Position</td>
+<td align="left">4</td>
+<td align="left">各種杜邦綫座子之類 (可選)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">MicroFit3 Connector Plug 3 Position</td>
+<td align="left">1</td>
+<td align="left">各種杜邦綫座子之類 (可選)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">MicroFit3 Connector Plug 2 Position</td>
+<td align="left">2</td>
+<td align="left">各種杜邦綫座子之類 (可選)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">MicroFit3 Connector Receptacle 4 Position</td>
+<td align="left">4</td>
+<td align="left">各種杜邦綫座子之類 (可選)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">MicroFit3 Connector Receptacle 3 Position</td>
+<td align="left">1</td>
+<td align="left">各種杜邦綫座子之類 (可選)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">MicroFit3 Connector Receptacle 2 Position</td>
+<td align="left">2</td>
+<td align="left">各種杜邦綫座子之類 (可選)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">MLX Power Receptacle 3 Position (bed wiring)</td>
+<td align="left">1</td>
+<td align="left">各種杜邦綫座子之類 (可選)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">MLX Power Plug 3 Position</td>
+<td align="left">1</td>
+<td align="left">各種杜邦綫座子之類 (可選)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">MLX Male Pin</td>
+<td align="left">6</td>
+<td align="left">各種杜邦綫座子之類 (可選)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">MLX Female Pin</td>
+<td align="left">6</td>
+<td align="left">各種杜邦綫座子之類 (可選)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">MicroFit3 Female Pin</td>
+<td align="left">40</td>
+<td align="left">各種杜邦綫座子之類 (可選)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">MicroFit3 Male Pin</td>
+<td align="left">40</td>
+<td align="left">各種杜邦綫座子之類 (可選)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">WAGO 221-415 Lever-Nuts</td>
+<td align="left">3</td>
+<td align="left">各種杜邦綫座子之類 (可選)</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">IGUS E2i-10-10-018-0 Chain (405mm [1.33ft])</td>
+<td align="left">2</td>
+<td align="left">坦克鏈 轉向半徑 R18 寬 10 高 10</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">IGUS E2-100-10-12PZ Chain Ends (set)</td>
+<td align="left">2</td>
+<td align="left">注意, <strong>一份是一對</strong> 買之前注意開孔位置</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">IGUS E2-15-10-028-0 Chain (545mm [1.79ft])</td>
+<td align="left">1</td>
+<td align="left">坦克鏈 轉向半徑 R28 寬 15 高 10</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">IGUS E2-150-10-12PZ Chain Ends (set)</td>
+<td align="left">1</td>
+<td align="left">注意, <strong>一份是一對</strong> 買之前注意開孔位置</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Coroplast Sheet - 469x469x4 mm</td>
+<td align="left">2</td>
+<td align="left">瓦楞塑料板</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Coroplast Sheet - 483x503x4 mm</td>
+<td align="left">1</td>
+<td align="left">瓦楞塑料板</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Acrylic Sheet Clear - 241.5x503x3 mm</td>
+<td align="left">2</td>
+<td align="left">透明亞克力板</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Acrylic Sheet Clear - 483x503x3 mm</td>
+<td align="left">2</td>
+<td align="left">透明亞克力板</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Acrylic Sheet Clear - 483x483x3 mm</td>
+<td align="left">1</td>
+<td align="left">透明亞克力板</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">MIC6 5&#x2F;16” Plate - 14”x14”</td>
+<td align="left">1</td>
+<td align="left">熱床鋁質平台</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Adhesive Magnetic Sheet - 14”x14”</td>
+<td align="left">1</td>
+<td align="left">磁吸 PEI 熱床平台</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Spring Steel Flexible Print Surface - 14”x14”</td>
+<td align="left">1</td>
+<td align="left">磁吸 PEI 熱床平台</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td align="left">Keenovo Silicone AC Heater w&#x2F; thermistor - 300x300mm (650W)</td>
+<td align="left">1</td>
+<td align="left">硅膠熱床, 使用時注意接地</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>終於列完了, 太多了…<br>這些東西買完差不多要 2k HKD 左右, 懶得自己配就買成品吧, 不過那就要6k了…</p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>從零購置一台 Voron 打印機 (一) 采購</p><p><a href="https://blog.awa.moe/2022/08/23/voron/voron-2-4-bom/">https://blog.awa.moe/2022/08/23/voron/voron-2-4-bom/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>TheSnowfield</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2022-08-23</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2024-03-17</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/Voron/">Voron</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2022/08/24/voron/openstick-with-voron/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">從零購置一台 Voron 打印機 (二) Klipper 主機調試</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2022/08/16/problem-about-stm32-i2c/"><span class="level-item">STM32 I2C 不工作的問題</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><script async="" src="https://giscus.app/client.js" data-repo="Thesnowfield/blog.thesnowfield.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkyMzY1NDY2ODI=" data-category="General" data-category-id="DIC_kwDODhlqes4CO-oF" data-mapping="pathname" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top" data-theme="light" data-lang="en" data-loading="lazy" crossorigin="anonymous"></script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1 is-sticky"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="https://avatars.githubusercontent.com/u/17957399" alt="TheSnowfield"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">TheSnowfield</p><p class="is-size-6 is-block">IN PURSUIT OF FREEDOM</p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">27</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">14</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">21</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/TheSnowfield" target="_blank" rel="noopener">Explore GitHub</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" href="https://github.com/TheSnowfield"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" href="mailto:thesnowfield@awa.moe"><i class="fas fa-envelope"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" href="/atom.xml"><i class="fas fa-rss"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" onclick="shakeit()"><i class="fa-regular fa-snowflake"></i></a></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-06-12T15:20:06.000Z">2024-06-12</time></p><p class="title"><a href="/2024/06/12/fix-thermometer/">又摔壞了一個溫度計</a></p><p class="categories"><a href="/categories/%E4%BF%AE%E4%BF%AE%E8%A3%9C%E8%A3%9C%E7%9A%84%E5%AF%B6%E8%B2%B4%E7%B6%93%E9%A9%97/">修修補補的寶貴經驗</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-03-21T03:53:50.000Z">2024-03-21</time></p><p class="title"><a href="/2024/03/21/kmod-signing/">給 kmod 簽名以支援安全啓動</a></p><p class="categories"><a href="/categories/Linux/">Linux</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-10-06T13:58:31.000Z">2023-10-06</time></p><p class="title"><a href="/2023/10/06/photography/mooncake-2023/mooncake-2023/">無聊拍點月餅</a></p><p class="categories"><a href="/categories/%E6%94%9D%E5%BD%B1%E6%94%9D%E5%83%8F/">攝影攝像</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-10-04T17:20:23.000Z">2023-10-05</time></p><p class="title"><a href="/2023/10/05/magical-mirai/light-stick/teardown/">發光應援棒的改造 (拆解概覽)</a></p><p class="categories"><a href="/categories/%E7%A1%AC%E9%AB%94%E9%96%8B%E7%99%BC/">硬體開發</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-10-03T06:52:10.000Z">2023-10-03</time></p><p class="title"><a href="/2023/10/03/magical-mirai/light-stick/foreword/">發光應援棒的改造 (前言)</a></p><p class="categories"><a href="/categories/%E7%A1%AC%E9%AB%94%E9%96%8B%E7%99%BC/">硬體開發</a></p></div></article></div></div><div class="column-right-shadow is-hidden-widescreen is-sticky"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3 is-sticky"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">Catalogue</h3><ul class="menu-list"><li><a class="level is-mobile" href="#BOM-生成向導"><span class="level-left"><span class="level-item">1</span><span class="level-item">BOM 生成向導</span></span></a></li><li><a class="level is-mobile" href="#完整清單"><span class="level-left"><span class="level-item">2</span><span class="level-item">完整清單</span></span></a></li></ul></div></div><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/AXP173/"><span class="tag">AXP173</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/AllWinner-H3/"><span class="tag">AllWinner H3</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/BLE/"><span class="tag">BLE</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/CH1115/"><span class="tag">CH1115</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/COSMOS-USBKEY/"><span class="tag">COSMOS USBKEY</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/FPGA/"><span class="tag">FPGA</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Kintex-7/"><span class="tag">Kintex-7</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/OpenStick/"><span class="tag">OpenStick</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/RP2040/"><span class="tag">RP2040</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/STM32/"><span class="tag">STM32</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Voron/"><span class="tag">Voron</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Xilinx/"><span class="tag">Xilinx</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E3%83%9E%E3%82%B8%E3%82%AB%E3%83%AB%E3%83%9F%E3%83%A9%E3%82%A4/"><span class="tag">マジカルミライ</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E4%BF%AE%E4%BF%AE%E8%A3%9C%E8%A3%9C%E7%9A%84%E5%AF%B6%E8%B2%B4%E7%B6%93%E9%A9%97/"><span class="tag">修修補補的寶貴經驗</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%AE%8C%E7%BE%8E%E7%BF%BB%E8%BB%8A/"><span class="tag">完美翻車</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%92%BF%E5%9E%83%E5%9C%BE/"><span class="tag">撿垃圾</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%A8%B9%E8%8E%93%E6%B4%BE/"><span class="tag">樹莓派</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%AD%A3%E7%95%B6%E7%99%BD%E5%AB%96%E8%A1%8C%E7%88%B2/"><span class="tag">正當白嫖行爲</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%84%A1%E8%81%8A%E7%A0%94%E7%A9%B6/"><span class="tag">無聊研究</span><span class="tag">13</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%A1%AC%E9%AB%94%E9%96%8B%E7%99%BC/"><span class="tag">硬體開發</span><span class="tag">8</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"><span class="tag">碎碎念</span><span class="tag">1</span></a></div></div></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/BLE/"><span class="level-start"><span class="level-item">BLE</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/Linux/"><span class="level-start"><span class="level-item">Linux</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/LiteVNA/"><span class="level-start"><span class="level-item">LiteVNA</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/OpenSCAD/"><span class="level-start"><span class="level-item">OpenSCAD</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/OpenStick/"><span class="level-start"><span class="level-item">OpenStick</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/PMIC/"><span class="level-start"><span class="level-item">PMIC</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/RP2040/"><span class="level-start"><span class="level-item">RP2040</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/STM32/"><span class="level-start"><span class="level-item">STM32</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/Voron/"><span class="level-start"><span class="level-item">Voron</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E4%BF%AE%E4%BF%AE%E8%A3%9C%E8%A3%9C%E7%9A%84%E5%AF%B6%E8%B2%B4%E7%B6%93%E9%A9%97/"><span class="level-start"><span class="level-item">修修補補的寶貴經驗</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%94%9D%E5%BD%B1%E6%94%9D%E5%83%8F/"><span class="level-start"><span class="level-item">攝影攝像</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%84%A1%E8%81%8A%E7%A0%94%E7%A9%B6/"><span class="level-start"><span class="level-item">無聊研究</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%A1%AC%E9%AB%94%E9%96%8B%E7%99%BC/"><span class="level-start"><span class="level-item">硬體開發</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile" href="/categories/%E9%80%86%E5%90%91%E7%A0%B4%E8%A7%A3/"><span class="level-start"><span class="level-item">逆向破解</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/">ATMOSPHERE</a><p class="is-size-7"><span>&copy; 2024 TheSnowfield</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>
